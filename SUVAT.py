@@ -40,6 +40,8 @@ class Projectile:
         #s = ut + 0.5at**2
         self.vs = (self.vu * self.time) + (0.5 * self.va * self.time**2)
 
+        self.vv = self.vu + (self.time * self.va)
+
         return self.hs, self.vs
 
     def getTotalTime(self):
